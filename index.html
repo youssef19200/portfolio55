@@ -1553,14 +1553,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     })
     .then(response => {
         if (response.ok) {
-            // Success state
-            btn.innerHTML = `
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                </svg>
-                <span>Message Sent!</span>`;
-            btn.style.background = '#22c55e';
-
+           
             showToast('Email sent! I'll get back to you soon.', 'success');
             this.reset();
 
